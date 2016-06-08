@@ -1,13 +1,15 @@
+<%= tinymce_assets %>
+
 <%= simple_form_for(@post) do |f| %>
   <%= f.error_notification %>
-
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.input :date %>
-    <%= f.input :body %>
+    <%= f.text_area :body, class: "tinymce"  %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-lg btn-success" %>
   </div>
 <% end %>
+<%= tinymce %>
