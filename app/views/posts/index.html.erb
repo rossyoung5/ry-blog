@@ -8,13 +8,8 @@
     <p class="text-muted"><%= post.date %></p>
     <p><%= post.body %></p>
     <%= link_to "Read More", post, class:"btn btn-lg btn-info" %>
-    <%= link_to 'Edit', edit_post_path(post) %>
-    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
 </div>
-    <!-- <div class="col-sm-4">
-      <h2>Sidebar...</h2>
-    </div> -->
 
 <br>
 
