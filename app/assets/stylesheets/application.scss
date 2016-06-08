@@ -16,3 +16,360 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+/Fonts//
+
+$title: 'Palanquin Dark', sans-serif;
+$copy: 'Rubik', sans-serif;
+$alt-copy: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+//Colors//
+
+$black: #000;
+$off-black: #1f1f1f;
+$white: #fff;
+$off-white: #f5f5f5;
+$gold: #ffcc00;
+
+//Weights//
+
+$thin: 100;
+$bold: 600;
+
+
+/* Nav */
+.navbar {
+  background-color: $white;
+}
+
+.navbar-brand > img {
+  display: block;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 90px;
+    height: 90px;
+    padding-top: 5px;
+}
+
+.open .dropdown-menu{
+  display:block;
+}
+
+ul.nav{
+  font-family: $title;
+}
+
+ul.nav.navbar-nav{
+  font-size: 24px;
+  padding-left: 2%;
+}
+
+.nav.navbar-nav.navbar-right {
+  margin-right: 2%;
+}
+
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: $black;
+}
+
+.navbar-default .navbar-nav > li > a.nav1:hover,
+.navbar-default .navbar-nav > li > a.nav1:focus{
+  color: $gold;
+}
+/* end of nav */
+
+/* Icons */
+.social .fa-github-alt:hover {
+    color: #6cc644;
+}
+
+.social .fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.social .fa-linkedin-square:hover {
+    color: #0094BC;
+}
+
+.social .fa-envelope:hover {
+  color: #e64522;
+}
+/* end of Icons */
+
+/* Intro */
+#intro {
+  background-image: url("../images/background_nola_blurred.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 125px;
+  padding-bottom: 175px;
+  margin: 0;
+  h1 {
+    padding-top: 100px;
+    font-family: $title;
+    font-size: 4.5em;
+    color: $black;
+  }
+  hr{
+    border-color: $gold;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  h3 {
+    font-family: $copy;
+    color: $white;
+  }
+}
+
+/* end Intro */
+
+/* Background */
+
+#background{
+  background-color: $off-black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#background-left {
+  margin: 2% 0;
+  h2{
+    font-family: $title;
+    color: $gold;
+    font-size: 3em;
+  }
+  h3{
+    font-family: $copy;
+    color: $off-white;
+  }
+  p{
+    font-family: $alt-copy;
+    font-weight: $thin;
+    font-size: 18px;
+    color: $off-white;
+    padding-top: 15px;
+  }
+}
+
+#background-right {
+  margin: 2% 0;
+}
+
+#ross {
+  height: 65%;
+  width: 65%;
+  float: right;
+  margin-right: 20%;
+}
+
+/* end Background */
+
+/* Projects */
+#projects{
+  background-color: $off-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#toprow {
+  padding-bottom: 15px;
+}
+
+#projects h2 {
+  font-family: $title;
+  color: $gold;
+  font-size: 3.0em;
+}
+
+#project-row-1 {
+  padding-bottom: 20px;
+}
+
+#project-row-2 {
+  padding-top: 20px;
+}
+
+/* end Projects */
+
+/* Contact */
+#contact {
+  background-color: $off-black;
+  padding-top:50px;
+  padding-bottom:50px;
+  h2{
+    font-family: $title;
+    color: $gold;
+    font-size: 3.0em;
+  }
+  p{
+    font-family: $alt-copy;
+    font-weight: $thin;
+    font-size: 18px;
+    color: $off-white;
+    padding-top: 15px;
+  }
+}
+
+#contact-left {
+  margin: 2% 0;
+}
+
+#contact-right {
+  margin: 2% 0;
+  padding-top: 55px;
+  .btn-lg{
+    padding: 20px 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: $gold;
+  }
+  .btn-lg:hover{
+  background-color: #e6b800;
+  }
+  a{
+    font-family: $copy;
+  }
+}
+/* end Contact */
+
+/* Responsive */
+@media (max-width: 1374px) {
+  #ross{
+  padding-right:20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  ul.nav.navbar-nav{
+  font-size: 17px;
+  }
+  .jumbotron h1 {
+    font-size: 56px;
+    margin-bottom: 25px;
+  }
+  .jumbotron h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+  .jumbotron p {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1091px) {
+  ul.nav.navbar-nav{
+  font-size: 17px;
+
+  }
+}
+@media (max-width: 994px) {
+  .navbar-brand > img {
+  max-height: 65px;
+  }
+  ul.nav.navbar-nav{
+  font-size: 17px;
+  padding-left: 0%;
+  }
+  .navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 2px;
+}
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .jumbotron p{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 903px) {
+  .navbar-brand > img {
+  max-height: 55px;
+  }
+  ul.nav.navbar-nav.navbar-right{
+  font-size: 13px;
+  padding-left: 0%;
+  }
+  .navbar-nav li a {
+    line-height: 60px;
+    max-height: 60px;
+    padding-top: 2px;
+  }
+}
+@media (max-width: 860px) {
+  ul.nav.navbar-nav{
+  font-size: 13px;
+  padding-left: 0%;
+  }
+}
+@media (max-width: 774px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+  }
+    .nav.navbar-nav.navbar-right {
+      display:none;
+    }
+    ul.nav.navbar-nav {
+      font-size: 17px;
+    }
+
+  /* end new mobile nav */
+  .navbar-brand > img {
+  max-height: 70px;
+  }
+  .navbar-header{
+    height:75px;
+  }
+  div.single-project {
+    padding-top: 5%;
+  }
+  #project-row-1 {
+    padding-bottom: 0;
+  }
+  #project-row-2 {
+    padding-top: 0;
+  }
+}
