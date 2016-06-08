@@ -108,31 +108,29 @@ ul.nav.navbar-nav{
   margin-top: 100px;
 }
 
-#intro {
-  background-image: url("../images/background_nola_blurred.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 125px;
-  padding-bottom: 175px;
-  margin: 0;
-  h1 {
-    padding-top: 100px;
+h1 {
     font-family: $title;
     font-size: 4.5em;
     color: $black;
+}
+
+h2{
+    font-family: $title;
+    color: $gold;
+    font-size: 3em;
   }
-  hr{
+
+hr{
     border-color: $gold;
     margin-left: 20%;
     margin-right: 20%;
-  }
-  h3 {
+}
+
+h3 {
     font-family: $copy;
     color: $white;
-  }
 }
+
 
 /* end Intro */
 
@@ -146,11 +144,7 @@ ul.nav.navbar-nav{
 
 #background-left {
   margin: 2% 0;
-  h2{
-    font-family: $title;
-    color: $gold;
-    font-size: 3em;
-  }
+
   h3{
     font-family: $copy;
     color: $off-white;

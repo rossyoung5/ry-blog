@@ -1,6 +1,6 @@
 <%= tinymce_assets %>
 
-<%= simple_form_for(@post) do |f| %>
+<%= simple_form_for([:admin, @post]) do |f| %>
   <%= f.error_notification %>
   <div class="form-inputs">
     <%= f.input :title %>
