@@ -16,8 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600);
+@import url(https://fonts.googleapis.com/css?family=Rubik:500,700);
 
-/Fonts//
+//Fonts//
 
 $title: 'Palanquin Dark', sans-serif;
 $copy: 'Rubik', sans-serif;
@@ -101,6 +103,11 @@ ul.nav.navbar-nav{
 /* end of Icons */
 
 /* Intro */
+
+#blog-body {
+  margin-top: 100px;
+}
+
 #intro {
   background-image: url("../images/background_nola_blurred.jpg");
   background-repeat: no-repeat;
@@ -203,7 +210,7 @@ ul.nav.navbar-nav{
   padding-top:50px;
   padding-bottom:50px;
   h2{
-    font-family: $title;
+    // font-family: $title;
     color: $gold;
     font-size: 3.0em;
   }
