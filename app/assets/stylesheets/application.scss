@@ -128,10 +128,20 @@ hr{
 
 h3 {
     font-family: $copy;
-    color: $white;
+    color: $black;
 }
 
+p{
+    font-family: $copy;
+    font-weight: $thin;
+    font-size: 18px;
+    color: $off-black;
+    padding-top: 5px;
+}
 
+#post-date {
+  font-family: $alt-copy;
+}
 /* end Intro */
 
 /* Background */
