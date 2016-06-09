@@ -1,1 +1,7 @@
-<h2>Sidebar...</h2>
+<h2>Categories</h2>
+
+<% Category.order(:name).each do |category| %>
+  <li>
+    <%= link_to category.name.titleize, blog_path(category_id: category.id)%>
+  </li>
+<% end %>

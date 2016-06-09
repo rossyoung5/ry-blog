@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  belongs_to :category
   validates_presence_of :body, :title
 
   has_attached_file :avatar, :styles => { :medium => "400x400>", :thumb => "200x200>" }, :default_url => "/images/:style/missing.png"
