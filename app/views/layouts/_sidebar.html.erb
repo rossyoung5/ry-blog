@@ -2,6 +2,6 @@
 
 <% Category.order(:name).each do |category| %>
   <li>
-    <%= link_to category.name.titleize, blog_path(category_id: category.id)%>
+    <%= link_to category.name.titleize, posts_path(category_id: category.id)%>
   </li>
 <% end %>

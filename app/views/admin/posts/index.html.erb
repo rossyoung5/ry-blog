@@ -7,7 +7,9 @@
     <% @posts.each do |admin_post| %>
       <p><%= image_tag admin_post.avatar.url(:thumb) %></p>
       <p><strong><%= admin_post.title %></strong></p>
-      <p class="text-muted", id="post-date"><%= admin_post.date %></p>
+      <p class="text-muted", id="post-date">
+        <%= admin_post.date %> | <%= admin_post.category.name.titleize %>
+      </p>
       <p><%=raw admin_post.body.truncate(200) %></p>
       <%= link_to "See Post", admin_post_path(admin_post), class:"btn btn-lg btn-info" %>
       <%= link_to 'Delete Post', [:admin, admin_post], method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-md btn-danger" %>

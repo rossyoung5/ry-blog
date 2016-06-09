@@ -5,7 +5,12 @@ class Admin::PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.order('date desc')
+    if params[:category_id]
+      @category=Category.find(params[:category_id])
+      @posts=Post.order(date: :desc).where(category_id: @category.id).paginate(:page => params[:page])
+    else
+      @posts = Post.order(date: :desc).paginate(:page => params[:page])
+    end
   end
 
   # GET /posts/1
