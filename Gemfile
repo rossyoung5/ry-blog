@@ -32,6 +32,8 @@ gem 'simple_form'
 gem 'devise'
 gem 'tinymce-rails'
 gem "paperclip", "~> 4.3"
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
