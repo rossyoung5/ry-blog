@@ -6,5 +6,5 @@ class Post < ActiveRecord::Base
 
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
-  self.per_page = 10
+  self.per_page = 5
 end

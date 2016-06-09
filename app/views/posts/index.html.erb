@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Blog</h1>
-
 <%= render @posts %>
+
+<div>
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
 
 <br>
 
