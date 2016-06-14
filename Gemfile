@@ -35,6 +35,7 @@ gem "paperclip", "~> 4.3"
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 gem "figaro"
+gem 'aws-sdk', '< 2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
