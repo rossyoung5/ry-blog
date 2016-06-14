@@ -1,4 +1,4 @@
-<p><%= image_tag post.avatar.url(:thumb) %></p>
+<p><%= image_tag post.avatar.url(:medium) %></p>
 <h2><%= post.title %></h2>
 <p class="text-muted", id="post-date"><%= post.date %> | <%= post.category.name.titleize %></p>
 <p><%=raw post.body.truncate(200) %></p>
