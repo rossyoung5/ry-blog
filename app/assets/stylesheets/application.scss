@@ -17,7 +17,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600);
-@import url(https://fonts.googleapis.com/css?family=Rubik:500,700);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,700);
 
 //Fonts//
 
@@ -134,7 +134,7 @@ h3 {
 p{
     font-family: $copy;
     font-weight: $thin;
-    font-size: 18px;
+    font-size: 1.1em;
     color: $off-black;
     padding-top: 5px;
 }
